@@ -8,8 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^5.0.2"
-psycopg = "^3.1.18"
 python-dotenv = "^1.0.1"
+psycopg = {extras = ["binary"], version = "^3.1.18"}
 
 
 [build-system]
