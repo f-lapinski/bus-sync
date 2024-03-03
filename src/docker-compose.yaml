@@ -16,10 +16,14 @@ services:
     image: postgres:15
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
     environment:
-      - SQL_USER=hello_django
-      - SQL_PASSWORD=hello_django
-      - SQL_DATABASE=hello_django_dev
+      - SQL_USER=bussync
+      - SQL_PASSWORD=bussync2024
+      - SQL_DATABASE=bussync
 
 volumes:
   postgres_data:
