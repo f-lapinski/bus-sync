@@ -75,15 +75,16 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-        "NAME": os.environ.get("SQL_DATABASE", BASE_DIR / "db.sqlite3"),
-        "USER": os.environ.get("SQL_USER", "user"),
-        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-        "HOST": os.environ.get("SQL_HOST", "localhost"),
-        "PORT": os.environ.get("SQL_PORT", "5432"),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bussync',     # Specify the database name
+        'USER': 'bussync',         # Specify the database user
+        'PASSWORD': 'bussync2024', # Specify the database password
+        'HOST': 'db-1',             # Specify the database container's service name
+        'PORT': '5432',           # Specify the port PostgreSQL is running on (default is 5432)
     }
 }
+
 
 
 # Password validation

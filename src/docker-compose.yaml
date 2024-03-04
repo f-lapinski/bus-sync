@@ -21,9 +21,9 @@ services:
     env_file:
       - .env
     environment:
-      - SQL_USER=bussync
-      - SQL_PASSWORD=bussync2024
-      - SQL_DATABASE=bussync
+      - POSTGRES_DB = bussync-dev
+      - POSTGRES_PASSWORD = bussync2024
+      - POSTGRES_USERNAME=bussync
 
 volumes:
   postgres_data:
