@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bussync',     # Specify the database name
-        'USER': 'bussync',         # Specify the database user
-        'PASSWORD': 'bussync2024', # Specify the database password
-        'HOST': 'db-1',             # Specify the database container's service name
-        'PORT': '5432',           # Specify the port PostgreSQL is running on (default is 5432)
+        'NAME': 'bussync-dev',
+        'USER': 'bussync',
+        'PASSWORD': 'bussync2024',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
