@@ -5,7 +5,9 @@ Bus Fleet Management System
 
 <p>
 DEBUG=
+
 SECRET_KEY=
+
 DJANGO_ALLOWED_HOSTS=
 </p>
 
