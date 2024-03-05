@@ -2,9 +2,12 @@
 Bus Fleet Management System
 
 .env file
+
+<code>
 DEBUG=
 SECRET_KEY=
 DJANGO_ALLOWED_HOSTS=
+</code>
 
 docker compose up for postgresql database
 
