@@ -1,5 +1,8 @@
 from django.http import HttpResponse
+from .models import Vehicle
 
 
 def index(request):
-    return HttpResponse("There are vehicles")
+    vehicles = Vehicle.objects.all()
+    for vehicle in vehicles:
+        return HttpResponse(str(vehicle))
