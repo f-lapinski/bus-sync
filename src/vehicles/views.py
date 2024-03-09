@@ -10,3 +10,15 @@ def index(request):
 
 def detail(request, vehicle_id):
     return HttpResponse(Vehicle.objects.get(id=vehicle_id))
+
+
+def create(request):
+    return None
+
+
+def update(request):
+    return None
+
+
+def delete(request):
+    return None
