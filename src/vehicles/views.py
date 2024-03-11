@@ -3,13 +3,11 @@ from .models import Vehicle
 
 
 def index(request):
-    vehicles = Vehicle.objects.all()
-    for vehicle in vehicles:
-        return HttpResponse(str(vehicle))
+    return None
 
 
 def detail(request, vehicle_id):
-    return HttpResponse(Vehicle.objects.get(id=vehicle_id))
+    return None
 
 
 def create(request):
