@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2>Dodaj nowy pojazd</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="id_brand">Marka:</label>
+                        <input type="text" class="form-control" id="id_brand" name="brand" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="id_model">Model:</label>
+                        <input type="text" class="form-control" id="id_model" name="model" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="id_inv_number">Numer taborowy:</label>
+                        <input type="text" class="form-control" id="id_inv_number" name="inv_number" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="id_register_number">Numer Rejestracyjny:</label>
+                        <input type="text" class="form-control" id="id_register_number" name="register_number" required>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock content %}
