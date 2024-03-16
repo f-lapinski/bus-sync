@@ -61,5 +61,9 @@ def edit_vehicle(request, vehicle_id):
     return render(request, 'vehicles/forms/edit_form.html', {'vehicle': vehicle})
 
 
-def delete(request):
-    return None
+def delete_vehicle(request, vehicle_id):
+    vehicle = get_object_or_404(Vehicle, id=vehicle_id)
+    if request.method == 'POST':
+        vehicle.delete()
+        return redirect('/vehicles/')
+    return render(request, 'vehicles/vehicle_delete.html', {'vehicle': vehicle})
