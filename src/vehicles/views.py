@@ -23,7 +23,7 @@ def index(request):
     return render(request, 'vehicles/all_vehicles.html', {'page_obj': page_obj})
 
 
-def detail(request, vehicle_id):
+def detail_vehicle(request, vehicle_id):
     vehicle = Vehicle.objects.get(pk=vehicle_id)
     return render(request, 'vehicles/vehicle_details.html', {'vehicle': vehicle})
 
