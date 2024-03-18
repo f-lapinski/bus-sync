@@ -21,6 +21,12 @@ Bus Fleet Management System
 ```bash
     Docker
 ```
+
+## How to run?
+```
+TODO
+```
+
 ## Authors
 
 - [@f-lapinski](https://www.github.com/f-lapinski)
