@@ -21,6 +21,9 @@ Bus Fleet Management System
 ```bash
     Docker
 ```
+```bash
+    Bootstrap
+```
 
 ## How to run?
 ```
