@@ -3,8 +3,6 @@
 
 Bus Fleet Management System
 
-.
-
 
 ## Used technologies
 
