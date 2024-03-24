@@ -6,22 +6,7 @@ Bus Fleet Management System
 
 ## Used technologies
 
-
-```bash
-    Django
-```
-```bash
-    Poetry
-```
-```bash
-    PostgreSQL
-```
-```bash
-    Docker
-```
-```bash
-    Bootstrap
-```
+For now, I am focused on make front-end with react, and think about later about back-end. maybe I build own or use some API what exist already.
 
 ## How to run?
 ```
