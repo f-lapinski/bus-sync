@@ -9,3 +9,48 @@
 	height: 25em;
 	padding: 1.5em;
 }
+
+.login-form {
+	width: 15vw;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-input,
+.password-input {
+	margin-bottom: 2vh;
+	min-width: max-content;
+}
+
+input[type='text'],
+input[type='password'] {
+	width: 80%;
+	padding: 10px;
+	border: 1px solid #3130304d;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 13px;
+	text-align: center;
+}
+
+.submit-button button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #09a54a;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit-button button:hover {
+	background-color: #037c09;
+}
+
+.login-information {
+	text-align: center;
+	color: #888;
+}
