@@ -1,4 +1,4 @@
-import { busSyncLogo } from '../../assets/logo.webp'
+import busSyncLogo from '../../assets/logo.webp'
 import './Logo.css'
 
 export default function Logo() {
