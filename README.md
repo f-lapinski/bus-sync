@@ -6,8 +6,8 @@ Bus Fleet Management System
 
 ## Used technologies
 
-React
-JavaScript
+```React```
+```JavaScript```
 
 ## How to run?
 ```
